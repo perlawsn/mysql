@@ -314,11 +314,11 @@ public class MySqlWrapper {
 			//new parameters
 			if (con!=null){
 			con.close();
-			this.con = DriverManager.getConnection(hostAddr2, "root", "francesco89");
+			this.con = DriverManager.getConnection(hostAddr2, "root", "password");
 			this.cmd=con.createStatement();
 			}
 			else{
-				this.con = DriverManager.getConnection(hostAddr2, "root", "francesco89");
+				this.con = DriverManager.getConnection(hostAddr2, "root", "password");
 				this.cmd=con.createStatement();
 			}
 		}
